@@ -8,7 +8,11 @@
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     </head>
     <body>
-        <div id="root"></div>
+        <div id="root">
+            <h1>{{ textTitle }}</h1>
+            <button @click="showImage" type="button" name="button">Cliccami</button>
+            <img style="display: block;" :src="imageUrl" alt="">
+        </div>
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
